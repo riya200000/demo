@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500;600;700&family=Poppins:wght@500;600;700;800&family=Rufina:wght@400;700&family=Work+Sans:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Rufina", serif;
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+    color:rgb(12, 29, 91) ;
+    font-size: 6rem;
+    font-weight: 600;
+  }
+  h2{
+    color:rgb(4, 15, 55) ;
+    font-size: 6rem;
+    font-weight: 800;
+  }
+  p {
+    color: #777777;
+    line-height: 1.6;
+    font-size: 1.8rem;
+  
+    /* word-spacing: 0.1rem; */
+  }
+  body {
+    overflow-x: hidden;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  li {
+    list-style: none;
+  }
+  
+
+.btn {
+    background: -webkit-linear-gradient(
+      0deg,
+      rgb(132 144 255) 0%,
+      rgb(98 189 252) 100%
+    );
+  
+    padding: 1.6rem 3.2rem;
+    border: none;
+    color: rgb(255 255 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 1300px;
+    margin-right: 1300px;
+    position: relative;
+    justify-content: center;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .btn:hover {
+    box-shadow: 0px 20px 20px 0px rgb(132 144 255 / 30%);
+    color: rgb(255 255 255);
+  }
+  /*our first section of home page*/
+
+.header{
+    padding: 0 4.8rem;
+    height:7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    background:rgb(249 249 255) ;
+}
+
+.header .logo{
+    height:20rem;
+    justify-content:space-around;
+    color: #020e17;
+}
+
+.navbar-lists{
+    display: flex;
+    gap: 5rem;
+    font-size: medium;
+    list-style: none;
+}
+
+.navbar-link:link,
+.navbar-link:visited{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color:#0b83f4;
+    transition:all 0.3s;
+    font-family:"Poppins", sans-serif; 
+}
+
+.navbar-link:hover,
+.navbar-link:active{
+    color:#2d3471;
+}
+
+.mobile-nav-icon{
+    width: 5rem;
+    height: 5rem;
+    color: #042848;
+}
+
+.mobile-nav-icon[name="close-outline"]{
+    display: none;
+}
+
+.sticky.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 8rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+.section-hero {
+    background:  rgb(249 249 255);
+  }
+  
+  .section-hero-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .hero-top-data {
+    text-transform: uppercase;
+    color: rgb(0 10 45);
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #8490ff;
+  }
+  
+  .hero-heading {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 6.4rem;
+  }
+  
+  .hero-para {
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+    max-width: 60rem;
+  }
+  
+  .section-hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-img {
+    max-width: 80%;
+    z-index: 1;
+  }
+  
+
+/*2nd section*/
+
+
+  .section
+   {
+    padding: 9rem 0;
+  }
+  
+  .container {
+    max-width: 140rem;
+    margin: 0 auto;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 9rem;
+  }
+  
+  .grid-two-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-three-col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section-portfolio {
+    background-color: rgb(249 249 255);
+  }
+
+  .section-portfolio p{
+    max-width: 60rem;
+  }
+  
+  .portfolio-images {
+    gap:3.2rem;
+    margin-top: 6.4rem;
+  }
+
+  .img-overlay{
+    position: relative;
+    overflow: hidden;
+  }
+
+  .portfolio-images img{
+    width: 100%;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .img-overlay .overlay{
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(
+    0deg,
+    rgb(132 144 255) 0%,
+    rgb(98 189 252) 100%
+    );
+    opacity:0;
+    color:#22bef6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+    transition: all 0.3s linear;
+    border-radius: 7px;
+
+  }
+
+  .img-overlay:hover > .overlay{
+    opacity: 0.8;
+    transform: translateY(0);
+    cursor:pointer;
+  }
+  .img-overlay .overlay .common-heading{
+    margin:0;
+    color:#fff;
+    text-decoration: none;
+  }
+  

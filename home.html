@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Painter's Web</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="header">
+        <img
+        src="logo painters.png"
+        alt=" logo"
+        class="logo"
+        />
+
+        <nav class="navbar">
+            <ul class="navbar-lists">
+                <li><a  class="navbar-link home-link" href="/home.html">Home</a></li>
+                <li><a class="navbar-link works-link"href="/works.html">Works</a></li>
+                <li><a class="navbar-link about"href="/about.html">About</a></li>
+
+            </ul>
+        </nav>
+        <div class="mobile-navbar-btn">
+            <ion-icon
+              class="mobile-nav-icon"
+              name="menu-outline"
+              class="mobile-nav-icon"
+            ></ion-icon>
+    
+            <ion-icon
+              class="mobile-nav-icon"
+              name="close-outline"
+              class="mobile-nav-icon"
+            ></ion-icon>
+          </div>
+    </header>
+    
+
+    <!-- its our home page  Three sections will be present on the page:
+    The first being a welcome section, containing:
+    The text "Welcome to A Painter's Web!" and
+    An image background.
+    The second section below the first section has:
+    A title of "Currently Popular Works" and 
+    Below three square clickable art photos in a row. 
+    When an art work is clicked, it will go to the work item page (all work item page links can go to the same page, no need to create multiple work item pages). 
+    Below this is a clickable link that says "View all works" that will take the user to the Works Page.
+    The third section below the second section will contain the words "About Us" centered in the section. 
+    When clicked, it will go to the About -->
+
+    <main>
+        <section class="section-hero section">
+          <div class="container grid grid-two-col">
+            <div class="section-hero-data">
+              <p class="hero-top-data">Welcome to</p>
+              <h1 class="hero-heading">A Painter's Web</h1>
+              <p class="hero-para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias atque temporibus veniam doloribus libero ad error omnis
+                voluptates animi! Suscipit sapiente.
+              </p>
+              
+            </div>
+  
+            <div class="section-hero-image">
+              <img src="pexels-anna-tarazevich-6358838.jpg" alt="hero image" class="hero-img" />
+            </div>
+          </div>
+        </section>
+      </main>
+
+<!--our home page 2nd section -->
+
+<section class="  section-portfolio section" id="portfolio-section">
+<div class="container">
+    <h1 common-heading> Currently Popular Works</h1>
+</div>
+
+<div class="container grid grid-three-col portfolio-images">
+
+    <div class="img-ovelay p-btn--1" >
+        <img src="pexels-steve-johnson-1266808.jpg" alt="bio data image" />
+        <div class="overlay">
+            <a href="/work-item.html" target="_blank"  class="common-heading">Works1</a>
+        </div>
+    </div>
+     
+    
+
+    <div class="img-ovelay p-btn--3" >
+        <img src="pexels-thirdman-7256192.jpg" alt="bio data image" />
+        <div class="overlay">
+            <a href="/work-item.html" target="_blank"  class="common-heading">Works2</a>
+        </div>
+    </div>
+
+
+
+    <div class="img-ovelay p-btn--3" >
+        <img src="pexels-scott-webb-1022934.jpg" alt="bio data image" />
+        <div class="overlay">
+            <a href="/work-item.html" target="_"  class="common-heading">Works3</a>
+        </div>
+
+    </div>
+
+
+</div>
+<div>
+    <a class="btn works-btn" href="/work-item.html" target="_blank">View all works</a>
+</div>
+        
+</section>
+
+ <!--our 3rd section about us page-->
+
+
+<div>
+    <a class="btn about-btn" href="/about.html" target="_blank">About Us</a>
+</div>
+
+ 
+</body>
+</html>
